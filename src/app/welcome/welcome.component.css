@@ -1,0 +1,17 @@
+.fieldset{
+    margin-top: 30vh;
+    margin-left: 30vw;
+    margin-bottom: 30vh;
+    margin-right: 30vw;
+}
+
+.welcome-message{
+    text-align: center;
+    font-size: 18px;
+}
+
+.button{
+    border-radius: 5px;
+    color: white;
+    background-color: #4CAF50;
+}

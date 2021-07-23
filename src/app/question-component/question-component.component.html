@@ -1,0 +1,10 @@
+<h2>User points : {{userPoints}}</h2>
+<div class = "screen">
+    <h2 style="width: 100%; text-align: center;">Pitanje</h2>
+    <input id="canvas" style="width: 70vw; height:30vh; border-radius: 5px;" value = "{{showedQuestion}}">
+    <div style="margin-top: 1%; display: flex;">
+        <h2>Odgovor</h2> 
+        <input style="margin-left: 2%; width: 80%; height: 5vh;" id = "userAnswer" #userAnswer>
+    </div>
+    <button (click) = "Next()">Dalje</button>
+</div>

@@ -1,0 +1,42 @@
+.sidenav-container{
+  height: 100vh;
+}
+
+.toolbar{
+  background-color: #4CAF50;
+}
+
+button{
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+mat-icon{
+  vertical-align: middle;
+}
+
+.sidenav{
+  width: 15%;
+  border-right: none;
+  background: #a5caa7;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  height: 95%;
+  margin-left: 0.3%;
+  margin-top: 0.5%;
+}
+
+.logout-button{
+  color: white;
+  display: inline-flex;
+  font-size: medium;
+  margin-left: 90%;
+}
+
+.logout-button:hover{
+  color: orange;
+  cursor: pointer;
+}

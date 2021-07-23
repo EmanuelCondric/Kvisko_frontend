@@ -1,0 +1,26 @@
+<mat-toolbar class = "toolbar">
+    <mat-toolbar-row>
+      <button mat-icon-button class = "button">
+        <mat-icon (click) = "drawer.toggle();">menu</mat-icon>
+      </button>
+      <div class = "logout-button" (click) = "logout()">
+        <i class = "material-icons">logout</i>
+        <b style = "margin-left: 3%;">Odjava</b>
+      </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav class = "sidenav" #drawer mode="side" opened role="navigation">
+      <mat-nav-list>
+        <a mat-list-item><i class = "material-icons">home</i><b style="margin-left: 5%;">Početna</b></a>
+        <a mat-list-item [routerLink]="['/novaigra']"><i class = "material-icons">sports_esports</i><b style="margin-left: 5%;">Nova igra</b></a>
+        <a mat-list-item><i class = "material-icons">list_alt</i><b style="margin-left: 5%;">Rezultati</b></a>
+        <a mat-list-item><i class = "material-icons">group</i><b style="margin-left: 5%;">Uredi korisnika</b></a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

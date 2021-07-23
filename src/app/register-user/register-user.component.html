@@ -1,0 +1,37 @@
+<form>
+  <div class="imgcontainer">
+    <img class = "register-logo" src="../../assets/register.png" width="20%" height="10%">
+  </div>
+
+  <div class="container">
+    <div>
+      <label class = "text-field"><b>Ime: </b></label>
+      <input type="text" placeholder="Unesite ime" name="firstName" required = true [(ngModel)] = "user.firstName">
+    </div>
+    <div>
+      <label class = "text-field"><b>Prezime: </b></label>
+      <input type="text" placeholder="Unesite prezime" width="30%" name="lastName" required = true [(ngModel)] = "user.lastName">
+    </div>
+    <div>
+      <label class = "text-field"><b>E-mail: </b></label>
+      <input type="text" placeholder="Unesite e-mail" width="30%" name="email" required = true [(ngModel)] = "user.email">
+    </div>
+    <div>
+      <label class = "text-field"><b>Korisničko ime: </b></label>
+      <input type="text" placeholder="Unesite korisničko ime" name="username" required = true [(ngModel)] = "user.username">
+    </div>
+    <div>
+      <label class = "text-field"><b>Zaporka: </b></label>
+      <input type="password" placeholder="Unesite zaporku" name="password" required = true [(ngModel)] = "user.password">
+    </div>
+    <div>
+      <label class = "text-field"><b>Ponovno zaporka: </b></label>
+      <input type="password" id = "password-again" placeholder="Unesite zaporku ponovno" name="password-again" required = true>
+    </div> 
+  </div>
+  <div class = "button-class">
+    <button class = "button-save" (click) = "saveUser()"><i class = "material-icons">save</i>Spremi</button>
+    <button class = "button-cancel" (click) = "cancel()"><i class = "material-icons">cancel</i>Odustani</button>
+  </div>
+
+</form>
