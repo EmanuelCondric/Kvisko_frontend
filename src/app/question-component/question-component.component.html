@@ -1,10 +1,24 @@
-<h2>User points : {{userPoints}}</h2>
-<div class = "screen">
-    <h2 style="width: 100%; text-align: center;">Pitanje</h2>
-    <input id="canvas" style="width: 70vw; height:30vh; border-radius: 5px;" value = "{{showedQuestion}}">
-    <div style="margin-top: 1%; display: flex;">
-        <h2>Odgovor</h2> 
-        <input style="margin-left: 2%; width: 80%; height: 5vh;" id = "userAnswer" #userAnswer>
-    </div>
-    <button (click) = "Next()">Dalje</button>
+<div style="width: 100%;">
+    <fieldset class = "fieldset-points">
+         <b style="width: 100%;">Bodovi : {{userPoints}}</b>
+    </fieldset>
+</div>
+<div style="width: 100%; height:40%; margin-top: 5%;">
+    <fieldset style="display: flex;">
+        <b class = "label-text">Pitanje: </b>
+        <div class = "question-box">
+            {{showedQuestion}}
+        </div>
+    </fieldset>
+</div>
+<div style="width: 100%; height:40%; margin-top: 5%;">
+    <fieldset style="display: flex;">
+        <b class = "label-text">Odgovor: </b>
+        <input class = "user-answer" id = "userAnswer" #userAnswer>
+    </fieldset>
+</div>
+<div>
+    <button class = "next-button" (click) = "Next()"><span class="material-icons">
+        arrow_right_alt
+        </span></button>
 </div>

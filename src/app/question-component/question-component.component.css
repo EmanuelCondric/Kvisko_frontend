@@ -1,6 +1,50 @@
-.screen{
-    width: 70%;
-    height: 70%;
-    margin-top: 10%;
-    margin-left: 15%;
+.fieldset-points{
+    width: 15%;
+    background-color: #a5caa7;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    margin-left: 5%;
+    margin-top: 2%;
+    font-size: 22px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px rgb(168, 68, 68) solid;
+    padding: 1%;
+}
+
+.label-text{
+    margin-left: 18%;
+    margin-top: 0.5%;
+    font-size: 18px;
+    width: 6%;
+    text-align: right;
+}
+
+.question-box{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(238, 236, 236);
+    margin-left: 2%;
+    padding: 1%;
+    border-radius: 6px;
+    font-size: 16px;
+    border: 2px rgb(197, 197, 197) solid;
+}
+
+.user-answer{
+    width: 50%;
+    margin-left: 2%;
+    border: 2px rgb(197, 197, 197) solid;
+    font-size: 16px;
+    padding: 1%;
+    border-radius: 6px;
+}
+
+.next-button{
+    margin-left: 45%;
+    margin-top: 3%;
+    width: 10%;
+    height: 60%;
+    background-color: #a5caa7;
+    border: 2px rgb(168, 68, 68) solid;
 }

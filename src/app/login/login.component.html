@@ -1,14 +1,19 @@
-<form action="action_page.php" method="post" *ngIf="loginFormGroup" [formGroup]="loginFormGroup" style="width: 50%; align-items: center; justify-content: center;">
+<div class = "background-container">
+  <form action="action_page.php" method="post" *ngIf="loginFormGroup" [formGroup]="loginFormGroup" style="width: 30%; align-items: center; justify-content: center;">
     <div class="imgcontainer">
-      <img src="../../assets/img_avatar2.png" width="10%" height="10%">
+      <img src="../../assets/img_avatar2.png" width="25%" height="25%">
     </div>
   
     <div class="container">
-      <label for="uname"><b>Korisničko ime</b></label>
-      <input type="text" placeholder="Unesite korisničko ime" name="username" required = true formControlName = "username">
-  
-      <label for="psw"><b>Zaporka</b></label>
-      <input type="password" placeholder="Unesite zaporku" name="password" required = true formControlName = "password">
+      <div style="width: 100%;">
+        <label for="uname" style="width: 100%;"><b>Korisničko ime</b></label>
+        <input style="width: 100%;" type="text" placeholder="Unesite korisničko ime" name="username" required = true formControlName = "username">
+      </div>
+      
+      <div style="width: 100%;">
+        <label for="psw" style="width: 100%;"><b>Zaporka</b></label>
+        <input style="width: 100%" type="password" placeholder="Unesite zaporku" name="password" required = true formControlName = "password">
+      </div>
   
       <button type="submit" (click) = "loginUser()">Prijava</button>
       <button type="submit" class = "button-register" (click) = "registrationUser()">Registracija</button>
@@ -22,3 +27,4 @@
       <span class="psw">Zaboravili ste <a href="#">lozinku?</a></span>
     </div>
   </form>
+</div>

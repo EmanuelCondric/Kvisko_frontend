@@ -1,82 +1,70 @@
-/* Bordered form */
-form {
-    border: 3px solid #f1f1f1;
-  }
-  
-  /* Full-width inputs */
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-  /* Set a style for all buttons */
-  button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 5px;
-  }
-  
-  /* Add a hover effect for buttons */
-  button:hover {
-    /* opacity: 0.8; */
-  }
+.background-container{
+  background-color: rgb(238, 231, 231);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
 
-  .button-register {
-    background-color: #8165e6;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  /* Extra style for the cancel button (red) */
-  .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-  }
-  
-  /* Center the avatar image inside this container */
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-  }
-  
-  /* Avatar image */
-  img.avatar {
-    width: 40%;
-    border-radius: 50%;
-  }
-  
-  /* Add padding to containers */
-  .container {
-    padding: 1%;
-  }
-  
-  /* The "Forgot password" text */
-  span.psw {
-    float: right;
-    padding-top: 16px;
-  }
-  
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-    span.psw {
-      display: block;
-      float: none;
-    }
-    .cancelbtn {
-      width: 100%;
-    }
-  }
+form {
+  border: 1.5px solid #6b2f2f;
+  margin-top: 7vh;
+  margin-left: 35vw;
+  background-color: white;
+  border-radius: 6px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 3% 5%;
+  margin: 1% 0%; 
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 4% 5%;
+  margin: 2% 0%;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.button-register {
+  background-color: #8165e6;
+  color: white;
+  padding: 4% 5%;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cancelbtn {
+  width: 20%;
+  background-color: #f44336;
+  padding: 3%;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin-top: 4%;
+}
+
+.psw{
+  margin-left: 40%;
+}
+
+.container{
+  margin-top: 5%;
+}
